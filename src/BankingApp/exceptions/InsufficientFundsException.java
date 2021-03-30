@@ -1,4 +1,10 @@
-package BankingApp.exceptions;
+package com.BankingApp.Exceptions;
 
-public class InsufficientFundsException {
+/**
+ * InsufficientFundsException
+ */
+public class InsufficientFundsException extends Exception {
+    public InsufficientFundsException() {
+        super("Sorry. Insufficient Balance.");
+    }
 }
