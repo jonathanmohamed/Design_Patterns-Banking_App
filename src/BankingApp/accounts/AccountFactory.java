@@ -1,6 +1,6 @@
-package BankingApp.account;
+package BankingApp.accounts;
 
-import com.BankingApp.Person.User;
+import BankingApp.person.User;
 import java.util.Random;
 
 public class AccountFactory {

@@ -1,5 +1,9 @@
 package BankingApp.person;
 
+import BankingApp.accounts.Account;
+import BankingApp.bank.Bank;
+import BankingApp.message.Message;
+
 import java.util.ArrayList;
 
 public class User {

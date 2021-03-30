@@ -1,9 +1,9 @@
 package BankingApp.bank;
 
-import BankingApp.Person.User;
 import BankingApp.accounts.Account;
 import BankingApp.accounts.AccountFactory;
 import BankingApp.message.Message;
+import BankingApp.person.User;
 
 import java.util.ArrayList;
 

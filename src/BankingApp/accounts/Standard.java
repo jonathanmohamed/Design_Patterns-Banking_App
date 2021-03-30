@@ -1,7 +1,7 @@
-package BankingApp.account;
+package BankingApp.accounts;
 
-import BankingApp.Exceptions.InsufficientFundsException;
-import BankingApp.Person.User;
+import BankingApp.exceptions.InsufficientFundsException;
+import BankingApp.person.User;
 import BankingApp.message.Message;
 import BankingApp.payments.CardPayment;
 

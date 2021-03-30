@@ -1,6 +1,6 @@
-package com.BankingApp.insurances;
+package BankingApp.insurances;
 
-import com.BankingApp.accounts.Account;
+import BankingApp.accounts.Account;
 
 public class HealthCareAccountInsurance extends AccountInsuranceDecorator {
 

@@ -1,8 +1,8 @@
-package com.BankingApp.insurances;
+package BankingApp.insurances;
 
-import com.BankingApp.accounts.Account;
+import BankingApp.accounts.Account;
 
-public class HousingAccountInsurance extends com.BankingApp.insurances.AccountInsuranceDecorator {
+public class HousingAccountInsurance extends AccountInsuranceDecorator {
 
     private final static double insuranceCost = 230.99;
     private final static int duration = 10;

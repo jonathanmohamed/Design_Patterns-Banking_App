@@ -1,9 +1,9 @@
-package com.BankingApp.insurances;
+package BankingApp.insurances;
 
-import com.BankingApp.Exceptions.InsufficientFundsException;
-import com.BankingApp.accounts.Account;
-import com.BankingApp.message.Message;
-import com.BankingApp.payments.CardPayment;
+import BankingApp.Exceptions.InsufficientFundsException;
+import BankingApp.accounts.Account;
+import BankingApp.message.Message;
+import BankingApp.payments.CardPayment;
 
 import java.util.ArrayList;
 

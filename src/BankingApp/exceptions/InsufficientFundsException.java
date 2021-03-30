@@ -1,4 +1,4 @@
-package com.BankingApp.Exceptions;
+package BankingApp.exceptions;
 
 /**
  * InsufficientFundsException
