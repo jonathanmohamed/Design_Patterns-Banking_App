@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.insurances;
+package BankingApp.insurances;
 
 public class AccountInsuranceDecorator {
 }

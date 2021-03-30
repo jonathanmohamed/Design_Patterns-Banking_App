@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.payments;
+package BankingApp.payments;
 
 public interface CardPayment {
     void makePayment(double money);

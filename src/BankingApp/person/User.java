@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.person;
+package BankingApp.person;
 
 import java.util.ArrayList;
 

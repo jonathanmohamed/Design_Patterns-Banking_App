@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.payments;
+package BankingApp.payments;
 
 public class Card implements CardPayment {
     private String IBAN;

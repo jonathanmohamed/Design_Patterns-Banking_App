@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.payments;
+package BankingApp.payments;
 
 public class Bitcoin implements CardPayment {
     private String btAddress;

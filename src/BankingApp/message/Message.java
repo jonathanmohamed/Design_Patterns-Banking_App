@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.message;
+package BankingApp.message;
 
 public class Message {
 

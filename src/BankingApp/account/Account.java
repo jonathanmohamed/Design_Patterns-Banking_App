@@ -1,4 +1,4 @@
-package com.isaac.jonathan.vu.account;
+package BankingApp.account;
 
 import com.BankingApp.Exceptions.InsufficientFundsException;
 import com.BankingApp.message.Message;
