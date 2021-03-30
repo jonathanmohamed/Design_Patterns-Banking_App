@@ -7,7 +7,7 @@ public class HealthCareAccountInsurance extends AccountInsuranceDecorator {
     private final static double insuranceCost = 109.99;
     private final static int duration = 5;
 
-    public HealthCareAccountInsurance(Account account){
+    public HealthCareAccountInsurance(Account account) {
         super(account);
     }
 
@@ -18,7 +18,6 @@ public class HealthCareAccountInsurance extends AccountInsuranceDecorator {
     public double getAccountBalance() {
         return super.getAccountBalance() - insuranceCost;
     }
-
 
 
 }

@@ -7,7 +7,7 @@ import BankingApp.message.Message;
 import java.util.ArrayList;
 
 public class User {
-    private String name;
+    private final String name;
     private ArrayList<Account> accounts;
     private ArrayList<Message> messages;
 

@@ -1,14 +1,14 @@
 package BankingApp.insurances;
 
-import BankingApp.Exceptions.InsufficientFundsException;
 import BankingApp.accounts.Account;
+import BankingApp.exceptions.InsufficientFundsException;
 import BankingApp.message.Message;
 import BankingApp.payments.CardPayment;
 
 import java.util.ArrayList;
 
-public abstract class AccountInsuranceDecorator implements Account{
-    private Account account;
+public abstract class AccountInsuranceDecorator implements Account {
+    private final Account account;
 
     public AccountInsuranceDecorator(Account account) {
         this.account = account;
@@ -23,6 +23,11 @@ public abstract class AccountInsuranceDecorator implements Account{
     }
 
     @Override
+    public void setAccountBalance(double money) {
+        this.account.setAccountBalance(money);
+    }
+
+    @Override
     public ArrayList<Message> getMessages() {
         return this.account.getMessages();
     }
@@ -30,11 +35,6 @@ public abstract class AccountInsuranceDecorator implements Account{
     @Override
     public void setMessages(Message message) {
         this.account.setMessages(message);
-    }
-
-    @Override
-    public void setAccountBalance(double money) {
-        this.account.setAccountBalance(money);
     }
 
     @Override
@@ -61,5 +61,4 @@ public abstract class AccountInsuranceDecorator implements Account{
     public void depositMoney(double amountToDeposit) {
         this.account.depositMoney(amountToDeposit);
     }
-
 }

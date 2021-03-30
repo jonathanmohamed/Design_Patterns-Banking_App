@@ -8,8 +8,8 @@ import BankingApp.person.User;
 import java.util.ArrayList;
 
 public class Bank {
-    private ArrayList<Account> accounts;
-    private AccountFactory accountFactory;
+    private final ArrayList<Account> accounts;
+    private final AccountFactory accountFactory;
 
     public Bank() {
         this.accountFactory = new AccountFactory();
@@ -21,7 +21,7 @@ public class Bank {
     }
 
     public void sendMessage(String message) {
-        for (Account account: this.accounts) {
+        for (Account account : this.accounts) {
             account.setMessages(new Message(message));
         }
     }

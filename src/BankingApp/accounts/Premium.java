@@ -1,21 +1,20 @@
 package BankingApp.accounts;
 
 import BankingApp.exceptions.InsufficientFundsException;
-import BankingApp.person.User;
 import BankingApp.message.Message;
 import BankingApp.payments.CardPayment;
+import BankingApp.person.User;
 
 import java.util.ArrayList;
 
 public class Premium implements Account {
 
+    private final static double interestRate = 2.5;
     protected double money;
     protected ArrayList<String> transactionHistory;
     protected int accountNumber;
     protected User user;
     protected ArrayList<Message> messages;
-
-    private final static double interestRate = 2.5;
 
     public Premium(User user, int accountNumber) {
         this.user = user;
@@ -33,6 +32,11 @@ public class Premium implements Account {
     }
 
     @Override
+    public void setAccountBalance(double money) {
+        this.money = money;
+    }
+
+    @Override
     public ArrayList<Message> getMessages() {
         return this.messages;
     }
@@ -40,11 +44,6 @@ public class Premium implements Account {
     @Override
     public void setMessages(Message message) {
         this.messages.add(message);
-    }
-
-    @Override
-    public void setAccountBalance(double money) {
-        this.money = money;
     }
 
     @Override
@@ -70,8 +69,9 @@ public class Premium implements Account {
         }
         cardPayments.makePayment(cost);
     }
+
     public void depositMoney(double amountToDeposit) {
-        double money = amountToDeposit + ((amountToDeposit * interestRate)/100);
+        double money = amountToDeposit + ((amountToDeposit * interestRate) / 100);
         this.money += money;
     }
 }

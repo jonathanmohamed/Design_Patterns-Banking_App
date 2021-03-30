@@ -6,7 +6,8 @@ public class HousingAccountInsurance extends AccountInsuranceDecorator {
 
     private final static double insuranceCost = 230.99;
     private final static int duration = 10;
-    public HousingAccountInsurance(Account account){
+
+    public HousingAccountInsurance(Account account) {
         super(account);
     }
 

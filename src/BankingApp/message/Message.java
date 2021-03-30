@@ -5,7 +5,7 @@ public class Message {
     private String message;
     private boolean isRead;
 
-    public Message (String message) {
+    public Message(String message) {
         this.message = message;
         this.isRead = false;
     }

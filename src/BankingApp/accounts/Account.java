@@ -12,11 +12,11 @@ public interface Account {
 
     double getAccountBalance();
 
+    void setAccountBalance(double money);
+
     ArrayList<Message> getMessages();
 
     void setMessages(Message message);
-
-    void setAccountBalance(double money);
 
     ArrayList<String> getTransactionHistory();
 
