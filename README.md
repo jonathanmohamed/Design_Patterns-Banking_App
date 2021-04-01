@@ -5,6 +5,7 @@
 ![Design Patterns - Banking App UML](BankingApp-DP-UML.png)
 
 ## Design Patterns
+By: Vu, Jonathan and Isaac.
 
 The Following patterns were implemented into this application:
 
